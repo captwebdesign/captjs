@@ -1,0 +1,19 @@
+{
+  "name": "captjs",
+  "version": "0.0.1",
+  "description": "A collection of various functions useful when programming JavaScript.",
+  "license": "MIT",
+  "homepage": "https://github.com/captwebdesign/captjs",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/captwebdesign/captjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/captwebdesign/captjs/issues"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^3.3.0"
+  }
+}

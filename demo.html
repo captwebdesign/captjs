@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo for CaptJS</title>
+  </head>
+  <body>
+    <!-- Has the browser completed loading? -->
+    <script src="parts/header.js"></script>
+    <script src="src/helloWorld.js"></script>
+    <script src="src/setAlarm.js"></script>
+    <script src="src/cancelAlarm.js"></script>
+    <script type="text/javascript">
+    
+      // helloWorld()
+      capt.helloWorld();
+      
+      // setAlarm()
+      capt.setAlarm(1000,function(){
+        console.log("Ding! This is from the setAlarm() function.");
+      });
+      
+      // clearAlarm
+      var alarm_id = capt.setAlarm(10000,function(){
+        console.log('Ding! This is an alarm.');
+      });
+      if(capt.cancelAlarm(alarm_id)){
+        console.log('Alarm cancelled.');
+      }
+      
+    </script>
+  </body>
+</html>

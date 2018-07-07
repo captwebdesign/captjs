@@ -60,15 +60,12 @@
     <!-- Has the browser completed loading? -->
     <script src="dist/capt.js"></script>
     <script type="text/javascript">
-    
-      // helloWorld()
-      capt.helloWorld();
-      
+
       // setAlarm()
       capt.setAlarm(1000,function(){
         console.log("Ding! This is from the setAlarm() function.");
       });
-      
+
       // clearAlarm
       var alarm_id = capt.setAlarm(10000,function(){
         console.log('Ding! This is an alarm.');
@@ -76,7 +73,7 @@
       if(capt.cancelAlarm(alarm_id)){
         console.log('Alarm cancelled.');
       }
-      
+
     </script>
   </body>
 </html>

@@ -1,3 +1,4 @@
 capt.currentTimestamp = function(){
-  return Date.now();
+  var date = new Date();
+  return date.valueOf();
 };

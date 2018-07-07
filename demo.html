@@ -57,19 +57,15 @@
     <script src="src/cancelAlarm.js"></script>
     <script src="src/currentTimestamp.js"></script>
     <script src="src/dateFromTimestamp.js"></script>
-    <script src="src/helloWorld.js"></script>
     <script src="src/isBrowserLoaded.js"></script>
     <script src="src/setAlarm.js"></script>
     <script type="text/javascript">
-    
-      // helloWorld()
-      capt.helloWorld();
-      
+
       // setAlarm()
       capt.setAlarm(1000,function(){
         console.log("Ding! This is from the setAlarm() function.");
       });
-      
+
       // clearAlarm
       var alarm_id = capt.setAlarm(10000,function(){
         console.log('Ding! This is an alarm.');

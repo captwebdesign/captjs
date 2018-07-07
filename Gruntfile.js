@@ -1,5 +1,10 @@
 module.exports = function(grunt) {
-  grunt.registerTask('default',['concat:default','uglify','concat:dist']);
+  grunt.registerTask('default',[
+    'concat:default',
+    'uglify',
+    'concat:dist',
+    'concat:asModule'
+  ]);
   grunt.initConfig({
     concat: {
       default: {
@@ -9,7 +14,6 @@ module.exports = function(grunt) {
             ,'src/cancelAlarm.js'
             ,'src/currentTimestamp.js'
             ,'src/dateFromTimestamp.js'
-            // ,'src/helloWorld.js'
             ,'src/isBrowserLoaded.js'
             ,'src/setAlarm.js'
           ]
@@ -20,6 +24,14 @@ module.exports = function(grunt) {
           'dist/capt.js': [
              'parts/license.js'
             ,'dist/capt.js'
+          ]
+        }
+      },
+      asModule: {
+        files: {
+          'dist/capt-module.js': [
+             'dist/capt.js'
+            ,'parts/module-footer.js'
           ]
         }
       }

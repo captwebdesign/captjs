@@ -1,3 +1,4 @@
-capt.dateFromTimestamp= function(){
-  return Date(date);
+capt.dateFromTimestamp= function(timestamp){
+  var date = new Date(timestamp);
+  return date.toUTCString();
 };

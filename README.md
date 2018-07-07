@@ -8,5 +8,10 @@ Use it as a reference to various how-to's for common tasks you may have when pro
 
 ## Changes:
 
-6-5-2018 
+6-7-2018
+- Released v0.0.2.
+- Fixed bugs.
+- Added mocha tests.
+
+6-5-2018
 - Released v0.0.1
